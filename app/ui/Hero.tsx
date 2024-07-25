@@ -50,7 +50,7 @@ function Hero() {
                 <span>
                   <span className="text-sm font-light mr-1">80+</span>
                   <span className={`${rubik.className} font-light`}>
-                    Github repo's.
+                    Github repo&apos;s.
                   </span>
                 </span>
               </li>
