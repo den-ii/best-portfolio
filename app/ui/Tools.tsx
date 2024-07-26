@@ -8,7 +8,7 @@ function Tools() {
       <h1
         className={`text-4xl xl:text-6xl ${rubik.className} font-medium px-14`}
       >
-        Technologies
+        Tech
       </h1>
       <div className="mt-14">
         <div className="flex flex-wrap">

@@ -48,9 +48,9 @@ function Hero() {
                   src="/codebranch.svg"
                 />
                 <span>
-                  <span className="text-sm font-light mr-1">80+</span>
+                  <span className="text-sm font-light mr-1">3+</span>
                   <span className={`${rubik.className} font-light`}>
-                    Github repo&apos;s.
+                    years of experience.
                   </span>
                 </span>
               </li>
@@ -67,7 +67,7 @@ function Hero() {
               >
                 <Image width={16} height={16} alt="grad" src="/grad.svg" />
                 <span className={`${rubik.className} font-light`}>
-                  ALX Graduate; UOpeople Student.
+                  ALX Graduate; Current UOpeople Student.
                 </span>
               </li>
               <li

@@ -15,8 +15,8 @@ export default function Home() {
         </div>
         <div className="hidden sm:block border-t-[3px] border-dashed border-[rgb(237_237_237_/_15%)]">
           <div className="flex justify-between ml-[1.62rem] mr-[1.62rem] lg:ml-[3.4rem] lg:mr-[3.4rem]">
-            <div className="h-[6px] w-[6px] bg-white -mt-[4px]"></div>
-            <div className="h-[6px] w-[6px] bg-white -mt-[4px]"></div>
+            <div className="h-[6px] w-[6px] bg-gray-50 -mt-[4px]"></div>
+            <div className="h-[6px] w-[6px] bg-gray-50 -mt-[4px]"></div>
           </div>
         </div>
         <div className="hidden sm:block border-l border-r border-[rgb(237_237_237_/_15%)] min-h-[80vh] ml-4 mr-4 sm:ml-7 sm:mr-7 lg:ml-14 lg:mr-14 pt-14">
