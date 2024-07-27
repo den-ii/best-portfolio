@@ -47,7 +47,7 @@ const projects = [
     description: `Mobile Device Management App for Kaios devices; incomplete`,
     techStack: ["typescript", "redux", "nextjs", "nodejs", "postgres", "aws"],
     projectImage: "mdm.jpg",
-    projectLink: "https://mdm-juicio8s-projects.vercel.app/",
+    projectLink: "https://pr-13.d3hn72cj9b8a8a.amplifyapp.com",
   },
   {
     title: "DEVOS INC - SACHET APP",
@@ -85,7 +85,7 @@ function Projects() {
       <h1
         className={`text-lg sm:text-4xl xl:text-6xl ${rubik.className} font-medium`}
       >
-        Projects
+        Projects & Collaborations
       </h1>
       <div className="mt-5 sm:mt-7 lg:mt-14">
         {projects.map((project, id) => (
