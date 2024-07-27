@@ -38,13 +38,21 @@ function Tools() {
             return (
               <div
                 key={i}
-                className={`${m} bg-black w-[60px] h-[60px] flex items-center justify-center border border-gray-50 rounded-full`}
+                className={`${m} bg-black w-[40px] h-[40px] sm:w-[60px] sm:h-[60px] flex items-center justify-center border border-gray-50 rounded-full`}
               >
                 <Image
                   width={40}
                   height={40}
                   alt={image}
                   src={`/${image}.svg`}
+                  className="hidden sm:inline-block"
+                />
+                <Image
+                  width={27}
+                  height={27}
+                  alt={image}
+                  src={`/${image}.svg`}
+                  className="sm:hidden"
                 />
               </div>
             );
