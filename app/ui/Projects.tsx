@@ -29,6 +29,14 @@ const projects = [
     projectLink: "https://love-me.app",
   },
   {
+    title: "PERSONAL - TASQUE APP",
+    description: `Create, view and run errands based on your location. Get notifications for tasks due, and view completed tasks; upcoming.`,
+    techStack: ["react", "ios", "android", "ruby", "rails", "postgres"],
+    techStackImages: ["react.svg", "python.svg", "openai.svg"],
+    projectImage: "tasque.jpg",
+    projectLink: "https://github.com/den-ii/tasQue-api",
+  },
+  {
     title: "ANKARA WORLD - CATALOGUE APP",
     description: `Ankara products catalogue app, with a dashboard for admin to add, update, delete products. Users can view products and their prices`,
     techStack: ["typescript", "nextjs", "firebase"],
@@ -40,7 +48,7 @@ const projects = [
     description: `Waitlist Page for future project, with analytics and user data collection integrated with firebase`,
     techStack: ["typescript", "nextjs", "firebase"],
     projectImage: "rolla.jpg",
-    projectLink: "https://rollabiz.com/",
+    projectLink: "https://www.rollabiz.com/",
   },
   {
     title: "DEVOS INC - MDM",
@@ -124,8 +132,8 @@ function Projects() {
               </div>
               <div>
                 <Image
-                  width={250}
-                  height={250}
+                  width={id === 2 ? 100 : 200}
+                  height={200}
                   alt={project.projectLink}
                   src={`/${project.projectImage}`}
                   className="rounded-md"
