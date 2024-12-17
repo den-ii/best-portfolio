@@ -79,6 +79,13 @@ const projects = [
     projectLink: "https://github.com/den-ii/CS1103/tree/main/src/unit7",
   },
   {
+    title: "UOPEOPLE - EARTH",
+    description: `A depiction of the moon revolving around the earth in the solar system using three.js`,
+    techStack: ["javascript", "threejs"],
+    projectImage: "earth.png",
+    projectLink: "https://programming-assignment-unit6.netlify.app",
+  },
+  {
     title: "FREELANCE - ESHOP",
     description: `E-commerce website during training, with a dashboard for admin to add, update, delete products. Users can view products and their prices`,
     techStack: ["typescript", "sass", "nextjs", "firebase"],
@@ -100,6 +107,7 @@ function Projects() {
           <a
             key={id}
             href={project.projectLink}
+            target="_blank"
             className="block sm:flex items-center justify-between gap-3 border-b border-[rgb(237_237_237_/_15%)] py-10"
           >
             <div

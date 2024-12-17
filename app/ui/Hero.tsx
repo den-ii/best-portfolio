@@ -1,12 +1,21 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import { poppins_bold, poppins_regular, rubik } from "./fonts";
 import Image from "next/image";
 
 function Hero() {
-  const currentDate = new Date();
-  const day = currentDate.getDate();
-  const month = currentDate.toLocaleString("default", { month: "long" });
-  const year = currentDate.getFullYear();
+  const [date, setDate] = useState("");
+
+  useEffect(() => {
+    const currentDate = new Date();
+    const month = currentDate.toLocaleString("default", { month: "long" });
+    const year = currentDate.getFullYear();
+    const day = currentDate.getDate();
+
+    setDate(`${month} ${day}, ${year}`);
+  }, []);
+
   return (
     <section>
       <div className="flex min-h-[40vh] sm:min-h-[80vh] border ml-14 mr-14 border-[rgb(237_237_237_/_15%)]">
@@ -23,7 +32,7 @@ function Hero() {
               SOFTWARE ENGINEER
             </div>
             <p className="mt-2 text-center text-[0.6rem] sm:text-lg">
-              DENI OCHICHE | {month} {day}, {year}
+              DENI OCHICHE | {date}
             </p>
           </div>
           <div className="flex justify-between">
