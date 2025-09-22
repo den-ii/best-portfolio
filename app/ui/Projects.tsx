@@ -5,7 +5,39 @@ import Link from "next/link";
 
 const projects = [
   {
-    title: "ROLLABIZ LLC - BURNER-LIVE MOBILE APP",
+    title: "AMPLIFY AI - FOUNDING FRONTEND ENGINEER",
+    description: `Amplify AI is an AI-powered platform designed to help Shopify store owners easily generate and manage ad campaigns. I led frontend development, building approximately 97% of the application using Next.js, Zustand, React Query, and Tailwind CSS. Follow @useamplify_ai on Instagram for updates on the launch.`,
+    techStack: ["react", "nextjs", "tailwind-css"],
+    projectImage: "amplify_ai.png",
+    projectLink: "https://useamplify.ai/",
+  },
+  {
+
+    title: "PARCSYNC - SOFTWARE ENGINEER",
+    description: `ParcSync is a collaborative platform that helps users find available parking spots in real time. Key features include live parking availability, navigation assistance, and EV charging support.
+As a Software Engineer on the team, I was responsible for developing and maintaining 100% of both the mobile and backend applications — using React Native with Expo for the mobile app and Node.js for the backend.
+The platform is launching soon.`,
+    techStack: ["react", "nodejs", "expo", "supabase"],
+    projectImage: "parcsync.png",
+    // projectLink: "https://parcsync.com/",
+  },
+  {
+   title: "INSEARCH.LINK - FRONTEND DEVELOPER",
+   description: `Insearch.link is a platform that enable users share social media links and images. I worked on turning Figma designs into a responsive, SEO-friendly Vue.js application with Pinia for state management and Tailwind CSS for styling.`,
+   techStack: ["vuejs", "tailwind-css"],
+    projectImage: "insearch-link.png",
+    projectLink: "https://insearch.link",
+  },
+    {
+    title: "SWAPLY FINANCE - FOUNDING MOBILE ENGINEER",
+    description: `As the Founding Mobile Engineer, I built 98% of the mobile app from the ground up using React Native. I worked closely with product and design to implement secure payments, real-time transaction tracking, and biometric authentication.`,
+    techStack: ["react", "expo", ],
+    techStackImages: ["react.svg", "expo.svg"],
+    projectImage: "swaply.png",
+    projectLink: "https://github.com/den-ii/swaply",
+  },
+  {
+    title: "BURNER LIVE - MOBILE DEVELOPER",
     description: `Burner shows you new releases from all the artists you like, in the order they came out. This way, you don't miss anything, and you stay up-to-date with all your favorite music on spotify.`,
     techStack: [
       "react",
@@ -20,8 +52,8 @@ const projects = [
     projectLink: "https://www.burner.live/",
   },
   {
-    title: "HNG INTERNSHIP - LOVEME APP",
-    description: `Generating letters for loved ones, on different occasssions. View dashboard for past letters, reuse letters, 
+    title: "LOVEME APP - FRONTEND INTERN",
+    description: `Generating letters for loved ones, on different occasions. View dashboard for past letters, reuse letters,
       share letters.`,
     techStack: ["react", "python", "openai"],
     techStackImages: ["react.svg", "python.svg", "openai.svg"],
@@ -29,64 +61,50 @@ const projects = [
     projectLink: "https://love-me.app",
   },
   {
-    title: "PERSONAL - TASQUE APP",
-    description: `Create, view and run errands based on your location. Get notifications for tasks due, and view completed tasks; upcoming.`,
-    techStack: ["react", "ios", "android", "ruby", "rails", "postgres"],
-    techStackImages: ["react.svg", "python.svg", "openai.svg"],
-    projectImage: "tasque.jpg",
-    projectLink: "https://github.com/den-ii/tasQue-api",
-  },
-  {
-    title: "ANKARA WORLD - CATALOGUE APP",
+    title: "ANKARA WORLD CATALOGUE - FULLSTACK DEVELOPER",
     description: `Ankara products catalogue app, with a dashboard for admin to add, update, delete products. Users can view products and their prices`,
     techStack: ["typescript", "nextjs", "firebase"],
     projectImage: "ankaraworldcatalog.jpg",
     projectLink: "https://ankaraworldcatalog.netlify.app/",
   },
   {
-    title: "ROLLABIZ LLC - ROLLA WAITLIST",
+    title: "ROLLA WAITLIST - FRONTEND ENGINEER",
     description: `Waitlist Page for future project, with analytics and user data collection integrated with firebase`,
     techStack: ["typescript", "nextjs", "firebase"],
     projectImage: "rolla.jpg",
     projectLink: "https://www.rollabiz.com/",
   },
+  
   {
-    title: "DEVOS INC - MDM",
-    description: `Mobile Device Management App for Kaios devices; incomplete`,
-    techStack: ["typescript", "redux", "nextjs", "nodejs", "postgres", "aws"],
-    projectImage: "mdm.jpg",
-    projectLink: "https://pr-13.d3hn72cj9b8a8a.amplifyapp.com",
-  },
-  {
-    title: "DEVOS INC - SACHET APP",
+    title: "SACHET@DEVOS INC - FULLSTACK DEVELOPER",
     description: `Developed for Kaios devices`,
     techStack: ["javascript", "react", "kaios", "nodejs", "postgres", "aws"],
     projectImage: "sachet.jpg",
     projectLink: "https://github.com/den-ii/Sachet",
   },
   {
-    title: "UOPEOPLE - WEATHER DESKTOP APP",
+    title: "WEATHER DESKTOP APP@UOPEOPLE - STUDENT PROJECT",
     description: `A weather app created for desktop, with a search feature to get weather data for any city in the world`,
     techStack: ["java"],
     projectImage: "weather.jpg",
     projectLink: "https://github.com/den-ii/weather-information-app",
   },
   {
-    title: "UOPEOPLE - CHAT APP",
+    title: "CHAT APP@UOPEOPLE - STUDENT PROJECT",
     description: `A chat-app app based on the server to connect to multiple clients, learnt about sockets in java`,
     techStack: ["java"],
     projectImage: "chatapp.jpg",
     projectLink: "https://github.com/den-ii/CS1103/tree/main/src/unit7",
   },
   {
-    title: "UOPEOPLE - EARTH",
+    title: "EARTH@UOPEOPLE - STUDENT PROJECT",
     description: `A depiction of the moon revolving around the earth in the solar system using three.js`,
     techStack: ["javascript", "threejs"],
     projectImage: "earth.png",
     projectLink: "https://programming-assignment-unit6.netlify.app",
   },
   {
-    title: "FREELANCE - ESHOP",
+    title: "ESHOP - LEARNING PROJECT",
     description: `E-commerce website during training, with a dashboard for admin to add, update, delete products. Users can view products and their prices`,
     techStack: ["typescript", "sass", "nextjs", "firebase"],
     projectImage: "eshop.jpg",
@@ -138,13 +156,13 @@ function Projects() {
                   );
                 })}
               </div>
-              <div>
+              <div style={{filter: 'grayscale(100%)', borderRadius: 8, }}>
                 <Image
-                  width={id === 2 ? 100 : 200}
-                  height={200}
+                  width={300}
+                  height={300}
                   alt={project.projectLink}
                   src={`/${project.projectImage}`}
-                  className="rounded-md"
+                  className="rounded-md "
                 />
               </div>
             </div>

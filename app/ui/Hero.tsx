@@ -76,7 +76,7 @@ function Hero() {
               >
                 <Image width={16} height={16} alt="grad" src="/grad.svg" />
                 <span className={`${rubik.className} font-light`}>
-                  ALX Graduate; Current UOpeople Student.
+                  ALX Graduate.
                 </span>
               </li>
               <li
@@ -84,7 +84,7 @@ function Hero() {
               >
                 <Image width={16} height={16} alt="grad" src="/grad.svg" />
                 <span className={`${rubik.className} font-light`}>
-                  Currently learning 3D development.
+                  Currently learning 3D development and ML.
                 </span>
               </li>
             </ul>

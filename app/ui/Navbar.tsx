@@ -14,7 +14,7 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className="flex sticky h-[50px] sm:h-[80px] top-0 bg-black justify-between items-center px-4 sm:px-7 lg:px-14 py-5 border-b border-[rgb(237_237_237_/_15%)]">
+    <nav className="flex sticky z-[100] h-[50px] sm:h-[80px] top-0 bg-black justify-between items-center px-4 sm:px-7 lg:px-14 py-5 border-b border-[rgb(237_237_237_/_15%)]">
       <div className="hidden sm:block text-[#A1A1A1] text-sm">{date}</div>
       <div className="flex items-start gap-1">
         <span
