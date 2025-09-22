@@ -160,7 +160,7 @@ function Projects() {
                 <Image
                   width={300}
                   height={300}
-                  alt={project.projectLink}
+                  alt={project.projectLink || ""}
                   src={`/${project.projectImage}`}
                   className="rounded-md "
                 />
